@@ -8,11 +8,11 @@ const person={
 
 console.log(typeof (person));
 
-//array
+// array
 // number[]={1,2,3,4,5};
-// console.log(number);
-// console.log(number[0]);
-// console.log(number[1]);
+console.log(number);
+console.log(number[0]);
+console.log(number[1]);
 
 function sayhello(){
     console.log("hello everyone!");
