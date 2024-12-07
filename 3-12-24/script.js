@@ -40,27 +40,27 @@ document.getElementById("demo").innerHTML=text;
 // }}
 
 
-function pattern(){
-    for(let i=1; i<=5; ++i)
-{
-    for(let j=1; j<=i; ++j){
-        document.getElementById("demo").innerHTML="*";
-    }
-    document.getElementById("demo").innerHTML="\n";
-}}
+// function pattern(){
+//     for(let i=1; i<=5; ++i)
+// {
+//     for(let j=1; j<=i; ++j){
+//         document.getElementById("demo").innerHTML="*";
+//     }
+//     document.getElementById("demo").innerHTML="\n";
+// }}
 
 function pattern(){
     for(let i=1; i<=5; ++i)
-{
+{      let text=" ";
     for(let j=1; j<=5; ++j){
         if(j>i){
-        document.getElementById("demo").innerHTML="*";
+        text+="*";
         }
         else{
-    document.getElementById("demo").innerHTML="\n";
+       text+=" ";
 
         }
     }
-    document.getElementById("demo").innerHTML="\n";
+    document.getElementById("demo").innerHTML=text;
 }}
 pattern();
