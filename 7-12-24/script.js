@@ -34,3 +34,4 @@ cars.map(key=>{
 })
 text= `</ul>`;
 console.log(text);
+
