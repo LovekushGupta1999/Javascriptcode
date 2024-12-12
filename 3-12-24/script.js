@@ -1,29 +1,29 @@
-function oddnumber(){
-    for(i=0; i<=10; ++i){
-        if(i/2!==0){
-            console.log(i);
-        }
-    }
-}
-function evennumber(){
-    for( i=0; i<=10; i=i+2){
-      console.log(i); 
-    }
-}
-function oddnumber(){
-    for( i=1; i<=10; i=i+2){
-      console.log(i); 
-    }
-}
-evennumber();
-oddnumber();
-let text="";
-let y=1;
-while(y<=10){
-    text+=`the number is ${y}<br>`;
-    y++;
-}
-document.getElementById("demo").innerHTML=text;
+// function oddnumber(){
+//     for(i=0; i<=10; ++i){
+//         if(i/2!==0){
+//             console.log(i);
+//         }
+//     }
+// }
+// function evennumber(){
+//     for( i=0; i<=10; i=i+2){
+//       console.log(i); 
+//     }
+// }
+// function oddnumber(){
+//     for( i=1; i<=10; i=i+2){
+//       console.log(i); 
+//     }
+// }
+// evennumber();
+// oddnumber();
+// let text="";
+// let y=1;
+// while(y<=10){
+//     text+=`the number is ${y}<br>`;
+//     y++;
+// }
+// document.getElementById("demo").innerHTML=text;
 
 // function pattern(){
 //     for(let i=1; i<=5; ++i)
@@ -61,6 +61,6 @@ function pattern(){
 
         }
     }
-    document.getElementById("demo").innerHTML=text;
+    console.log(text);
 }}
 pattern();

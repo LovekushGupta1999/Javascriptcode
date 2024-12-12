@@ -8,7 +8,7 @@ function validate(e){
     let confirmpassword= document.getElementById("cnfpassword").value;
     console.log(myname, myemail, password, confirmpassword);
     // validating the form
-    if(myname=""||myemail=""||password=""||confirmpassword=""){
+    if(myname==""||myemail==""||password==""||confirmpassword==""){
         alert("all input are required");
         return false;
 

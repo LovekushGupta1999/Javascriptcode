@@ -4,7 +4,7 @@ const display1=()=>{
 }
 let button=document.getElementById("btn");
 //when ever you pass a function as an argument to a function never use ()
-button.addEventListener("click",display1);
+// button.addEventListener("click",display1);
 
 //we can call regular function  before declaration but not arrow function and function expression
 
@@ -21,3 +21,4 @@ console.log(h1);
 h1[0].innerHTML="hello";
 h1[0].style.color="red";
 h1[1].innerHTML="hello in second tag";
+h1[1].style.color="red";
