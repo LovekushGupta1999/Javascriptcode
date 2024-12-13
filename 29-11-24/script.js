@@ -16,3 +16,5 @@ const show2=()=>{
     document.getElementById("demo").innerHTML=name;
     alert(name);
 }
+
+//practice
