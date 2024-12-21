@@ -37,19 +37,19 @@ display(userName);
 function displaymark(){
     let marks=parseInt(document.getElementById("myinput").value);
     document.getElementById("demo").innerHTML=marks;
-    console.log(marks);
-    alert(marks);
+    // console.log(marks);
+    // alert(marks);
 
     
 }
 displaymark();
-function displayname(){
+// function displayname(){
     let name=document.getElementById("myinput1").value;
     let age =parseInt(document.getElementById("myinput2").value);
     let course=document.getElementById("myinput3").value;
     document.getElementById("demo").innerHTML=name+age+course;
     
-}
+// }
 
 function display(){
     let course1=document.getElementById("demo1");

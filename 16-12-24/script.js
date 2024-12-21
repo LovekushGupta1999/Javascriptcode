@@ -71,14 +71,14 @@
 // console.log(joinArray);
 
 
-// const student=[
-//     {name:"lovekush", hindi:87,math:97,english:90,chamistry:97},
-//     {name:"ketan",  hindi:87,math:97,english:90,chamistry:97},
-//     {name:"sandip",  hindi:87,math:97,english:90,chamistry:97},
-//     {name:"sandip",  hindi:87,math:97,english:90,chamistry:97},
-//     {name:"sandip",  hindi:87,math:97,english:90,chamistry:97},
+const student=[
+    {name:"lovekush", hindi:87,math:97,english:90,chamistry:97},
+    {name:"ketan",  hindi:87,math:97,english:90,chamistry:97},
+    {name:"sandip",  hindi:87,math:97,english:90,chamistry:97},
+    {name:"sandip",  hindi:87,math:97,english:90,chamistry:97},
+    {name:"sandip",  hindi:87,math:97,english:90,chamistry:97},
 
-// ]
+]
 
 // function display(){
 //     let table=`
@@ -104,14 +104,14 @@
 
 function display(){
     let table=`
-    <table border="1px" width="600px" bgcolor="lightblue"
-    <tr>
+    <table border="1px" width="600px" bgcolor="lightblue" font-transform="capitalize" color="white">
+    <tr bgcolor="yellow"  >
     <th>name</th>
     <th>Hindi</th>
     <th>math</th>
     <th>english</th>
     <th>chamistry</th>
-    <th>total</th>
+    <th >total</th>
     </tr>`;
 student.map(function(y){
     table+=`
@@ -121,7 +121,7 @@ student.map(function(y){
     <td>${y.math}</td>
     <td>${y.english}</td>
     <td>${y.chamistry}</td>
-    <td>${y.hindi}+${y.math}+${y.english}+${y.chamistry}</td>
+    <td>${y.hindi+y.math+y.english+y.chamistry}</td>
     </tr>
 
     `;
@@ -138,8 +138,8 @@ document.getElementById("demo").innerHTML=table;
 // ];
 
 // function display(){
-//     let table=`<table border="1px">;
-//       <tr>
+//     let table="<table border=1px>";
+//      table+=` <tr>
 //     <th>name</th>
 //     <th>location</th>
 //     </tr>`
@@ -155,36 +155,55 @@ document.getElementById("demo").innerHTML=table;
 
 // }
 
-const number=[10, 24,345,3845,483,2284,395];
-const filteredNum=number.filter(function (num){
-    return num%2===0;
-})
-console.log(filteredNum);
+// const number=[10, 24,345,3845,483,2284,395];
+// const filteredNum=number.filter(function (num){
+//     return num%2===0;
+// })
+// console.log(filteredNum);
 
-let d= new Date();
-console.log(d);
+// let d= new Date();
+// console.log(d);
 //year,month,date,hour,minute,second,millisecond
-d= new Date(2020,15,15,23,34,45,3000);
-d= new Date(2020,15,15,23,34,45);
-d= new Date(2020,15,15,23,34);
-d= new Date(2020,15,15,23);
-d= new Date(2020,15,15);
-d= new Date(2020,15);
-d= new Date(2020);//considered as milisecond 
+// d= new Date(2020,15,15,23,34,45,3000);
+// d= new Date(2020,15,15,23,34,45);
+// d= new Date(2020,15,15,23,34);
+// d= new Date(2020,15,15,23);
+// d= new Date(2020,15,15);
+// d= new Date(2020,15);
+// d= new Date(2020);//considered as milisecond 
 
-//const today =new date();
-const year=today.getFullYear();
-const days =today.getDay();
+// //const today =new date();
+// const year=today.getFullYear();
+// const days =today.getDay();
 
-function display_day(day){
-    switch(day){
-        case 0:document.body.innerHTML="sunday"
-        case 1:document.body.innerHTML="monday"
-        case 2:document.body.innerHTML="Tuesday"
-        case 3:document.body.innerHTML="wednessday"
-        case 4:document.body.innerHTML="thrusday"
-        case 5:document.body.innerHTML="friday"
-        case 6:document.body.innerHTML="saturday"
-    }
-}
-display_day(days);
+// function display_day(day){
+//     switch(day){
+//         case 0:document.body.innerHTML="sunday"
+//         case 1:document.body.innerHTML="monday"
+//         case 2:document.body.innerHTML="Tuesday"
+//         case 3:document.body.innerHTML="wednessday"
+//         case 4:document.body.innerHTML="thrusday"
+//         case 5:document.body.innerHTML="friday"
+//         case 6:document.body.innerHTML="saturday"
+//     }
+// }
+// display_day(days);
+
+//spread 
+
+const numbers=[1,2,3,4,5,6,7];
+const numbers1=[10,20,30];
+const numbers2=[numbers,8,9,0,11,numbers1];
+console.log(numbers2);
+// const person={name:"harry potter",age:35};
+// const person2={...person,location:"jabalpur",name:"jhon"}
+// console.log(person2);
+
+// function display(...a){
+//     let result=0;
+//     a.forEach(val=>{
+//          result+=val;
+//     })
+//     return result;
+// }
+// console.log(display(10,20,30,40));
