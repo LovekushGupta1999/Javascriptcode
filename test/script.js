@@ -1,13 +1,18 @@
 //Q1
+function multiplication(){
 let n1=parseInt(document.getElementById("input1").value);
 let n2=parseInt(document.getElementById("input2").value);
 
 let result=n1*n2;
-document.getElementById("demo0").innerHTML=result;
-console.log(result);
- result=n1/n2;
-document.getElementById("demo6").innerHTML=result;
-console.log(result);
+document.getElementById("demo0").innerHTML=result;}
+// console.log(result);
+function divide(){
+let n1=parseInt(document.getElementById("input1").value);
+let n2=parseInt(document.getElementById("input2").value);
+
+let result=n1/n2;
+document.getElementById("demo0").innerHTML=result;}
+// console.log(result);
 
 
 //Q2
@@ -88,10 +93,5 @@ let name=document.getElementById("input3").value;
 let password=document.getElementById("input4").value;
 document.getElementById("demo3").innerHTML=name;
 document.getElementById("demo4").innerHTML=password;
-console.log(name);
-console.log(password);
-
-
 
 }
-display();

@@ -3,7 +3,7 @@
 // const numbers=[1,2,3,4,5];
 // const num1=number[0];
 // const num2=numbeer[1];
-// const [a,b,c,d]=number;
+// const [a,b,c,d]=numbers;
 // console.log(a);
 // console.log(b);
 // console.log(c);
@@ -31,6 +31,7 @@
 
 //object
 // const {name, age, city}=person;
+// console.log(name)
 
 //local storage
 //setitem
@@ -50,12 +51,14 @@
 // console.log(finaldata)
 
 function singup(){
-    let singupdata ={
+    let data ={
      username : document.queryselector("#username").value,
      password : document.querySelector("#password").value
 }
 localStorage.setItem("singupdata",JSON.stringify(data))
-var localdata= JSON.parse(localStorage.getItem("singupdata"))}
+}
+let localdata= JSON.parse(localStorage.getItem("singupdata"))
+
 
 function login(){
     let data={
@@ -65,7 +68,7 @@ function login(){
     }
 
     if(data.usernamelogin!=localdata.username || data.passwordlogin!=localdata.password)
-{
+{ 
     alert("user not found")
     return false;
 }}
