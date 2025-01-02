@@ -1,0 +1,9 @@
+{
+    "emp" :[
+        {
+            "name" : "rajeev",
+            "age" : 24,
+            "location" : "bhopal"
+        }
+    ]
+}
