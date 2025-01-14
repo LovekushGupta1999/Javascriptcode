@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="aos.css">
+    <style>
+        .container{
+            width: 100px;
+            height: 300px;
+        }
+        .container .ch1{
+            width: 60px;
+            height: 100px;
+        }
+        .container .ch2{
+            width: 20px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+   <div class="container" data-aos="fade-up">
+    <div class="ch1">lvoe</div>
+    <div class="ch2">kush</div>
+    </div>
+    <div class="container" data-aos="fade-down">
+        <div class="ch1">lovek</div>
+        <div class="ch2">kushgupta</div>
+        </div>
+
+        <div class="container" >
+            <div class="ch1" data-aos="fade-up"></div>
+            <div class="ch2">love</div>
+            </div>
+
+            <div class="container" >
+                <div class="ch1" data-aos="fade-up"></div>
+                <div class="ch2"></div>
+                </div>
+
+                <div class="container" data-aos="fade-up">
+                    <div class="ch1"></div>
+                    <div class="ch2"></div>
+                    </div>
+
+                    <div class="container" data-aos="fade-up">
+                        <div class="ch1"></div>
+                        <div class="ch2"></div>
+                        </div>
+                    
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init(
+        {
+            duration :500
+        }
+    );
+  </script>
+</body>
+</html>

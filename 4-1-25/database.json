@@ -2,13 +2,17 @@
   "student": [
     {
       "id": "1234",
-      "name": "lovekushgupta",
-      "city": "bhopalnehrunagar"
+      "name": "love",
+      "city": "bhopal"
     },
     {
       "id": "459",
       "name": "rehgoer",
-      "city": "sadjhgoir"
+      "city": "sadj"
+    },
+    {
+      "city": "bhopalnehru",
+      "id": "14"
     }
   ]
 }

@@ -1,5 +1,3 @@
-// const { json } = require("fs");
-
 async function showtable(){
     let url= "http://localhost:3000/student"
     let a= await fetch(url);
@@ -73,8 +71,8 @@ async function edit(id){
     let res =await fetch(`http://localhost:3000/student/${id}`);
     let data =await res.json();
     let edit_frm=`
-    <input type="text" value="${data.id}" id="id1"><br>
-    <input type="text" value="${data.name}" id="name1"><br>
+    <input type="text" value="${data.id}" id="id1" ><br>
+    <input type="text" value="${data.name}" id="name1" ><br>
     <input type="text" value="${data.city}" id="city1"><br>
     <input type="submit" value="Update" onclick="myupdate('${id}')">
     `
@@ -85,10 +83,11 @@ async function edit(id){
 //updation
 
 function myupdate(id){ 
+  
     let update_data={
         id: document.querySelector("#id1").value,
         name: document.querySelector("#name1").value,
-        city: document.querySelector("#ciry1").value
+        city: document.querySelector("#city1").value
     }
     fetch(`http://localhost:3000/student/${id}`,{
         method:"PUT",
